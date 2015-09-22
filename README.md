@@ -40,17 +40,19 @@ will produce something like this in your final output:
 ```
 
 See the EasyPieChart [repo](https://github.com/rendro/easy-pie-chart) for a full reference on usage. Here are the options available for quick reference:
-| Property (Type) | Default | Description |
-| **barColor** | #ef1e25 | The color of the curcular bar. You can either pass a valid css color string, or a function that takes the current percentage as a value and returns a valid css color string. |
-| **trackColor** | #f2f2f2 | The color of the track, or false to disable rendering. |
-| **scaleColor** | #dfe0e0 | The color of the scale lines, false to disable rendering. |
-| **scaleLength** | 5 | Length of the scale lines (reduces the radius of the chart). |
-| **lineCap** | round | Defines how the ending of the bar line looks like. Possible values are: `butt`, `round` and `square`. |
-| **lineWidth** | 3 | Width of the chart line in px. |
-| **size** | 110 | Size of the pie chart in px. It will always be a square. |
-| **rotate** | 0 | Rotation of the complete chart in degrees. |
-| **animate** | object | Object with time in milliseconds and boolean for an animation of the bar growing (`{ duration: 1000, enabled: true }`), or false to deactivate animations. |
-| **easing** | defaultEasing | Easing function or string with the name of a [jQuery easing function](http://gsgd.co.uk/sandbox/jquery/easing/) |
+
+Property (Type) | Default | Description
+-------- | --------- | ----------
+ **barColor** | #ef1e25 | The color of the curcular bar. You can either pass a valid css color string, or a function that takes the current percentage as a value and returns a valid css color string.
+**trackColor** | #f2f2f2 | The color of the track, or false to disable rendering. |
+**scaleColor** | #dfe0e0 | The color of the scale lines, false to disable rendering. |
+**scaleLength** | 5 | Length of the scale lines (reduces the radius of the chart). |
+**lineCap** | round | Defines how the ending of the bar line looks like. Possible values are: `butt`, `round` and `square`. |
+**lineWidth** | 3 | Width of the chart line in px. |
+**size** | 110 | Size of the pie chart in px. It will always be a square. |
+**rotate** | 0 | Rotation of the complete chart in degrees. |
+**animate** | object | Object with time in milliseconds and boolean for an animation of the bar growing (`{ duration: 1000, enabled: true }`), or false to deactivate animations. |
+**easing** | defaultEasing | Easing function or string with the name of a [jQuery easing function](http://gsgd.co.uk/sandbox/jquery/easing/) |
 
 
 ## Contributing
