@@ -3,11 +3,17 @@ module Easypiechart
 
     def index_ready
       @watches = []
-      @elem = `$("#" + #{first_element}.id)`
+      @elem = `$(#{first_element}).children().first()`
       if @elem
         if attrs.options
           begin
             JSON.parse(attrs.options).each do |option, value|
+              if option == 'size'
+                value_in_px = "#{value}px"
+                `#{@elem}.css("height",#{value_in_px});`
+                `#{@elem}.css("width",#{value_in_px});`
+                `#{@elem}.css("line-height",#{value_in_px});`
+              end
               `#{@elem}.data(#{option}, #{value})`
             end
           rescue Object => e
@@ -21,7 +27,9 @@ module Easypiechart
 
     def update_value
       if @elem
-        `#{@elem}.data('easyPieChart').update(#{attrs.percent})`
+        attrs.percent.then do |percent|
+          `#{@elem}.data('easyPieChart').update(#{percent})`
+        end
       end
     end
 

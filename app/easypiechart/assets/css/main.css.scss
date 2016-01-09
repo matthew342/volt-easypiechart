@@ -1,0 +1,29 @@
+.easy-pie {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .percent {
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 2;
+    font-size: 1.2em;
+  }
+  .percent:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: .9em;
+  }
+  .label {
+    text-align: center;
+    color: #333;
+    font-weight: 300;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+  }
+}

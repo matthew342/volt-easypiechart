@@ -1,7 +1,9 @@
 <:Body>
   <div class="easy-pie {{ attrs.classes }}" data-percent="{{ attrs.percent }}">
-    <div class="percent">{{ attrs.percent }}</div>
+    <div class="chart">
+      <div class="percent">{{ attrs.percent }}</div>
+    </div>
     {{ if attrs.pie_title }}
-      <div class="pie-title">{{ attrs.pie_title }}</div>
+      <div class="label">{{ attrs.pie_title }}</div>
     {{ end }}
   </div>
